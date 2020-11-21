@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
 
 $colors: (
-    primary: #d43f35,
-    primary-light: lighten(#d43f35,40%),
-    primary-dark: darken(#d43f35,40%),
+    primary: #0cb0a0,
+    primary-light: lighten(#148f83,40%),
+    primary-dark: darken(#00ffe6,40%),
     accent: lighten(#005DFF,10%)
 );
 
@@ -18,7 +18,7 @@ body , html{
     @return map-get($colors, $color-name)
 }
 
-$desktop: 840px;
+$desktop: 720px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
@@ -28,7 +28,7 @@ $desktop: 840px;
 
 body{
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Texturina', serif;
      #bg{
         clip-path: polygon(0 0, 100% 0, 84% 100%, 0% 100%);
         background: color(primary);
